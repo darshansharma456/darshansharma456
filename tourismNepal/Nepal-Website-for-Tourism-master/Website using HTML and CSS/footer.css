@@ -1,0 +1,41 @@
+/*.p1, .p2, .p3, .p4, .p5,.p6{
+	border: 1px solid silver;
+	height: 320px;
+	width: 350px;
+	margin-left: 50px;
+	margin-top: 30px;
+	float: left;
+
+}
+.p1, .p2, .p3, .p4, .p5,.p6{
+	text-align: center;
+}
+.book a:hover{
+	background-color: orange;
+}
+.book a{
+	text-align: center;
+	text-decoration: none;
+}*/
+
+.footer{
+	border:1px ;
+	height: 400px;
+	width: 100%;
+	float: left;
+	margin-top: 30px;
+
+}
+
+.info, .feedback,.direction{
+	border: 1px ;
+	height: 400px;
+	width: 387px;
+	float:left;
+	background-color: #0c0o18;
+
+}
+
+.direction a:hover{
+	background-color: yellow;
+}

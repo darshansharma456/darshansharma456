@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Home</title>
+
+	<link rel="stylesheet" type="text/css" href="nav.css">
+	<link rel="stylesheet" type="text/css" href="slideshow.css">
+	<link rel="stylesheet" type="text/css" href="footer.css">
+	<link rel="stylesheet" type="text/css" href="book.css">
+
+<style>
+
+.ThingsToDo{
+	border:1px;
+	height: 380px;
+	width: 95%;
+	float: left;
+	margin: 3%;
+	background-color: #f9f9f9;
+	font-family: Monotype corsiva;
+}
+.ToDo{
+	height: 250px;
+	width: 30%;
+	float: left;
+	margin-top: 0;
+	margin-left: 2%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*.travellerbox{
+	margin:2%;
+	margin-left: 3%;
+	
+	float: left;
+	background-color: #f9f9f9;
+	
+	
+	
+}*/
+
+.box2{
+	border:1px;
+	height: 450px;
+	margin-left: 15px;
+	float: left;
+	background-color: #f9f9f9;
+}
+.box1{
+	border:1px;
+	height: 350px;
+	margin-left: 15px;
+	margin-top: 4%;
+	float: left;
+	background-color: #f9f9f9;
+}
+
+.direction img{
+	height: 80px;
+	width:80px ;
+}
+</style>
+</head>
+
+
+
+
+<body>
+ 	<div class="nav">
+		<ul><li><a href="contact.html" style="padding-top: 30px;">Contact Us</a></li>
+			<li><a href="About.html" style="padding-top: 30px;">About Us</a></li>
+		 	<li><a href="TopDestinations.html" style="padding-top: 30px;">Top Destinations</a></li>
+			<li><a href="Blogs.html" style="padding-top: 30px;">Blogs</a></li>
+		 	<li><a href="Gallery.html" style="padding-top: 30px;">Gallery</a></li>
+		 	<li><a href="Home.html" style="padding-top: 30px;">Home</a></li>
+			<li style="font-family: monotype corsiva; color: black;font-weight:  bold; font-size: 25px;  float: left;  padding-left:5px; padding: 14px 0px; margin-left: 3%; "><img src="logo.jpg" style="height:20px; width: 18px; "> NEPAL <br>Tours & Travels</li>
+		</ul>
+	</div>
+
+
+	<div class="slideshow" style="margin-right: 0;">
+
+		<div class="mySlides fade">
+			<img src="swyambhu.jpg" style="width: 100%; height: 500px;">
+			<div class="text" style="font-family: verdana">CHOOSE YOUR <br>DESTINY <br>AND EXPLORE NEPAL</div>
+		</div>
+
+
+		<div class="mySlides fade">
+			<img src="patan.jpg" style="width: 100%; height: 500px;">
+			<div class="text" style="font-family: verdana">CHOOSE YOUR <br>DESTINY <br>AND EXPLORE NEPAL</div>
+		</div>
+
+		<div class="mySlides fade">
+			<img src="lumbini.jpg" style="width: 100%; height: 500px;">
+			<div class="text" style="font-family: verdana">CHOOSE YOUR <br>DESTINY <br>AND EXPLORE NEPAL</div>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		<div style="text-align:center">
+ 				 <span class="dot" onclick="currentSlide(1)"></span> 
+ 				 <span class="dot" onclick="currentSlide(2)"></span> 
+ 				 <span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+ <div class="note">
+ 	<p style="font-style: italic; font-size: 25px; text-align: center; color: silver;"> What are you in the mood for?</p> 
+ 	<h3 style="text-align: center; font-family: verdana; font-size: 30px; margin-top: 0; ">BOOK EXCURSIONS IN TOP DESTINATIONS</h3>
+ </div> 
+
+ <div class="book">
+ 	<div class="p" >
+ 		<a href="BookKathmandu.html"><img src="kathmandu.jpg" style="width: 350px; height: 280px; "></a>
+ 		<a href="BookKathmandu.html"> Kathmandu Durbar Square <br> Location: Kathmandu</b></a>
+
+ 	</div>
+
+ 	<div class="p">
+ 		<a href="BookKoshiTappu.html"><img src="koshitappu.jpg" style="width: 350px; height: 280px;"></a>
+ 		<a href="BookKoshiTappu.html"> Koshi Tappu<br> Location: Chitwan</b></a>
+ 		
+ 	</div>
+
+ 	<div class="p">
+ 		<a href="BookChitwan.html"><img src="CNP.jpg" style="width: 350px; height: 280px;"></a>
+ 		<a href="BookChitwan.html"> Chitwan National Park <br> Location: Chitwan</b></a>
+ 		
+ 	</div>
+
+ 		<div class="p">
+ 		<a href=""><img src="lumbini.jpg" style="width: 350px; height: 280px;"></a>
+ 		<a href=""> Lumbini <br> Location: Lumbini district</b></a>
+ 	</div>
+ 		<div class="p">
+ 			<a href=""><img src="barunvalley.jpg" style="width: 350px; height: 280px;"></a>
+ 		<a href=""> Barun Valley<br> Location: Chitwan</b></a>
+ 		
+ 	</div>
+
+ 	<div class="p">
+ 		<a href=""><img src="namchebazar.jpg" style="width: 350px; height: 280px;"></a>
+ 		<a href=""> Namche Bazar <br> Location: Solukhumbhu</b></a>
+ 		
+ 	</div>
+
+ 	<div class="button">
+ 	<button style="float: right; margin-right: 100px; margin-top: 30px; padding: 10px; background-color: red; border-radius: 7px;"><a href="TopDestinations.html" style="font-size: 20px; color: white">See More</a></button>
+ </div>
+
+
+
+ </div> 
+ <hr style="margin-top: 820px;">
+
+
+ <div class="ThingsToDo">
+ 	<p style="text-align: center;font-size: 30px; font-weight:  bolder;">THINGS TO DO</p>
+ 	<div class="ToDo">
+ 		<a href="treaking.jpg" target="_blank"><img src="treaking.jpg" style="width: 100%; height: 250px;"></a> <p style="margin-top: 10px; text-align: center; font-weight: bold; font-size: 20px;"> TREKKING</p>
+ 		
+ 	</div>
+ 	<div class="ToDo">
+ 		<a href="mountain.jpg" target="_blank"><img src="mountain.jpg" style="width: 100%; height: 250px;"> </a><p style="margin-top: 10px; text-align: center; font-weight: bold; font-size: 20px;"> MOUNTAINEERING</p>
+ 		
+ 	</div>
+ 	<div class="ToDo">
+ 		<a href="bird.jpg" target="_blank"><img src="bird.jpg" style="width: 100%; height: 250px;"></a> <p style="margin-top: 10px; text-align: center; font-weight: bold;font-size: 20px;"> BIRD WATCHING</p>
+ 	</div>
+ 	
+ </div>
+ <hr >
+
+
+
+
+
+
+<div class="travellerbox">
+	<div class="traveller" style="float: left;">
+ <h4 style="font-family: Monotype corsiva; font-size: 40px;  font-style: italic; margin-left: 250px; margin-top: 20px;"> WHAT DO TRAVELLER THINK  ABOUT US?</h4>
+</div>
+
+	<div class="box1" style="width: 25%; font-family: verdana;">
+		<img src="female.jpg" style="border-radius: 50%; width: 80%; height: 60%; margin-left: 10%;">
+		<p style="text-align: center; font-size: 15px;">  It has been a wonderful journey to me when i travelled with the company of NEPAL Tours and Travels.</p>
+		<p style="text-align: center; font-family: verdana; font-weight: bold;">- Ms. ABC<p>
+		
+	</div>
+
+	<div class="box2" style="width: 40%; font-family: verdana;">
+		<img src="male_travel.jpg" style="border-radius: 50%; width: 80%; height: 65%; margin-left: 10%;">
+		<p style="text-align: center;"> I like to travel a lot and I had joined many tours and travels companies. But when i joined NEPAL Tours and Travels I found it has provided best facilities than others. NEPAL Tours and Travels really care about their customers and provide all the  better facilities that the customer want.</p>
+		<p style="text-align: center; font-family: verdana; font-weight: bold;">- Mr. XYZ<p>
+		
+	</div>
+
+	<div class="box1" style="width: 25%; font-family: verdana;">
+		<img src="male.png" style="border-radius: 50%; width: 80%; height: 60%; margin-left: 10%;">
+		<p style="text-align: center; font-size: 15px;"> It has been a wonderful journey to me when i travelled with the company of NEPAL Tours and Travels.</p>
+		<p style="text-align: center; font-family: verdana; font-weight: bold;">- Mr. PQR	<p>
+		
+	</div>
+
+</div>
+
+
+<div class="footer" style="background-color: #0c0c18;  ">
+
+
+
+
+	<div class="info" style="background-color: #0c0c18;" >
+		<h4  style="font-family: monotype corsiva; color: #7d7d93;font-weight:  bold; font-size: 45px;  background-color: #0c0c18; margin:30px; float: left; padding-right: 70px;  margin-bottom: 10px;"> 
+		<img src="logo.jpg" style="height:30px; width: 30px; margin-left: 20px;"> NEPAL <br>Tours & Travels<br>
+
+		<p style="font-size: 30px; margin-top: 0; margin-left: 10px; margin-bottom: 10px;">Choose your Destiny</p>
+
+		<img src="phone.jpg" style="float:left; height: 40px; padding-right: 20px; margin-top: 5px;"><p style="text-align: left; font-size: 25px; color:  #7d7d93; margin-top: 20px; padding-left:10px; ">        +977 9860952730</p>
+
+		<img src="mail1.jpg" style="float:left; height: 40px; width: 45px;padding-right: 10px; margin-top: 0px;"><p style=" font-size: 25px; color:  #7d7d93; margin-left: 60px; margin-top: 20px; padding-top:6px; "> nepaltourandtravels@gmail.com</p>
+
+		<img src="address.png" style="float:left; height: 40px; width: 45px;padding-right: 10px; "><p style=" font-size: 25px; color:  #7d7d93; margin-left: 60px; margin-top: 20px; padding-top:12px; "> Thamel,Kathmandu,Nepal</p>	
+			</h4>
+	</div>
+
+
+
+
+	<div class="feedback" style="float: left; background-color: #0c0c18;">
+		<h5 style="color: white; font-size: 30px; margin-top: 60px; margin-left: 3%">GIVE US FEEDBACK</h5> 
+		<form>
+		<input type="email" name="email" placeholder=" Your E-mail ID " required="" style="margin-bottom: 30px; border-radius: 5px; padding: 10px; padding-left: 60px; margin-left: 3%;">	 
+		<textarea placeholder="Your Messages" name="message"  required="" style="border-radius: 5px; padding-bottom: 50px; padding-left: 73px; margin-top:0; margin-left:3%;"></textarea>
+		<input type="submit" name="submit" value="SEND MESSAGE" style="margin-left: 115px; padding: 10px; margin-top: 5px; border-radius: 10px; background-color: lightgreen; font-weight: bold; ">
+	</form>
+
+	</div>
+		<div class="direction" style="background-color: #0c0c18;">
+			<h5 style="color: white; font-size: 30px; margin-top: 70px;"> CONNECT WITH US IN</h5>
+			<a href="http://facebook.com"><img src="facebook.png" ></a>
+			<a href="http://twitter.com"><img src="twitter.png" ></a>
+			<a href="http://linkedin.com"><img src="linkedin.png" ></a>
+			<a href="http://instagram.com"><img src="instagram.png" ></a>
+		</div>
+</div> 
+
+
+
+
+</body>
+
+
+</html>
